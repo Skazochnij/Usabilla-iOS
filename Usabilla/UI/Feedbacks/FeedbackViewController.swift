@@ -14,6 +14,8 @@ protocol FeedbackControllerProtocol {
 }
 
 class FeedbackViewController: UIViewController, NibLoadable {
+    @IBOutlet weak var scroll: UIScrollView!
+    
     @IBOutlet weak var comment: UILabel!
     @IBOutlet weak var location: MKMapView!
     @IBOutlet weak var locationString: UILabel!
