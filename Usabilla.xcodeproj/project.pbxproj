@@ -19,6 +19,7 @@
 		BB0463C620D40F1700433B27 /* GeoManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0463BE20D40F1700433B27 /* GeoManagedObject+CoreDataClass.swift */; };
 		BB0463C920D4137B00433B27 /* ComputedBrowser+ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0463C820D4137B00433B27 /* ComputedBrowser+ManagedObject.swift */; };
 		BB0463CB20D4161000433B27 /* Feedback+ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0463CA20D4161000433B27 /* Feedback+ManagedObject.swift */; };
+		BB10C24E20D7164400BF7310 /* UsabillaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10C24D20D7164400BF7310 /* UsabillaViewModel.swift */; };
 		BB3195FE20D2C70100D41B86 /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3195FC20D2C70100D41B86 /* LabelCollectionViewCell.swift */; };
 		BB3195FF20D2C70100D41B86 /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB3195FD20D2C70100D41B86 /* LabelCollectionViewCell.xib */; };
 		BB31960120D2CEE600D41B86 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31960020D2CEE600D41B86 /* UICollectionView.swift */; };
@@ -136,6 +137,7 @@
 		BB0463BE20D40F1700433B27 /* GeoManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoManagedObject+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BB0463C820D4137B00433B27 /* ComputedBrowser+ManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComputedBrowser+ManagedObject.swift"; sourceTree = "<group>"; };
 		BB0463CA20D4161000433B27 /* Feedback+ManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feedback+ManagedObject.swift"; sourceTree = "<group>"; };
+		BB10C24D20D7164400BF7310 /* UsabillaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsabillaViewModel.swift; sourceTree = "<group>"; };
 		BB3195FC20D2C70100D41B86 /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB3195FD20D2C70100D41B86 /* LabelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelCollectionViewCell.xib; sourceTree = "<group>"; };
 		BB31960020D2CEE600D41B86 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 				BBC6602620D1369B00ED8082 /* Extensions */,
 				BBC6602120D1351A00ED8082 /* Feedbacks */,
 				BBC6603620D14F1700ED8082 /* UsabillaTabBarViewController.swift */,
+				BB10C24D20D7164400BF7310 /* UsabillaViewModel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -835,6 +838,7 @@
 				BBC6604620D154FE00ED8082 /* FeedbacksRepository.swift in Sources */,
 				BB0463A420D3FFDC00433B27 /* UIImage.swift in Sources */,
 				BBC6605320D1572E00ED8082 /* CoreDataService.swift in Sources */,
+				BB10C24E20D7164400BF7310 /* UsabillaViewModel.swift in Sources */,
 				BB0463C020D40F1700433B27 /* ComputedBrowserManagedObject+CoreDataProperties.swift in Sources */,
 				BBC6605C20D1598100ED8082 /* FeedbackManagedObject+CoreDataProperties.swift in Sources */,
 				BB70309F20D68A0600414EC4 /* Response.swift in Sources */,

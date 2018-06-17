@@ -11,8 +11,6 @@ import Foundation
 protocol FeedbacksViewModelProtocol: ViewModelDataReloadProtocol {
     var controller: FeedbacksControllerProtocol? { get set }
     var feedbacks: [Feedback] { get }
-    
-    func reloadData()
 }
 
 class FeedbacksViewModel: FeedbacksViewModelProtocol {

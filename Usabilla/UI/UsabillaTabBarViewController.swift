@@ -8,10 +8,15 @@
 
 import UIKit
 
-class UsabillaTabBarViewController: UITabBarController {
+class UsabillaTabBarViewController: UITabBarController, FeedbacksControllerProtocol {
+    var viewModel: FeedbacksViewModelProtocol? {
+        didSet {
+            viewModel?.controller = self
+            viewModel?.reloadData()
+        }
+    }
     
     private var delegates: [DataUpdateable] = []
-    private let repository = FeedbacksRepository(with: CoreDataWorker<FeedbackManagedObject, Feedback>())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,28 +25,14 @@ class UsabillaTabBarViewController: UITabBarController {
             instantiateDashboardController(),
             instantiateFeedbacksController()
         ]
-        
-        fetchNewFeedbacks({
-            self.delegates.forEach { $0.dataDidUpdate() }
-        })
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    private func fetchNewFeedbacks(_ completion: (() -> Void)? = nil) {
-        let request = FeedbacksRequest()
-        NetworkClient().perform(request) { (result: ResponseResult<FeedbacksResponse, NetworkError>) in
-            if let feedbacks = result.value?.items {
-                self.repository.upsert(entity: feedbacks)
-                completion?()
-            }
-            
-            if let error = result.error {
-                print("Error: \(error.localizedDescription)")
-            }
-        }
+    func feedbacksDidLoad() {
+        self.delegates.forEach { $0.dataDidUpdate() }
     }
 }
 
