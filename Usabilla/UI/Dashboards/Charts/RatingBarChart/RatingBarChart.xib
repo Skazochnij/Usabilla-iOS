@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingBarChart" customModule="Usabilla" customModuleProvider="target">
+            <connections>
+                <outlet property="chart" destination="QAR-CA-0hY" id="lRa-aG-uVQ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ZHJ-Xs-UjQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotions by numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eN-AQ-13I">
+                    <rect key="frame" x="8" y="8" width="304" height="18"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.4039215686" green="0.43529411759999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAR-CA-0hY" customClass="BarChartView" customModule="Charts">
+                    <rect key="frame" x="0.0" y="34" width="320" height="254"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BTh-n4-tKV">
+                    <rect key="frame" x="8" y="288" width="304" height="24"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mood_1" translatesAutoresizingMaskIntoConstraints="NO" id="agN-MG-Zg8">
+                            <rect key="frame" x="0.0" y="0.0" width="61" height="24"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mood_2" translatesAutoresizingMaskIntoConstraints="NO" id="iWB-EQ-CZQ">
+                            <rect key="frame" x="61" y="0.0" width="60.5" height="24"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mood_3" translatesAutoresizingMaskIntoConstraints="NO" id="tQY-dG-jEh">
+                            <rect key="frame" x="121.5" y="0.0" width="61" height="24"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mood_4" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-Lk-OKy">
+                            <rect key="frame" x="182.5" y="0.0" width="60.5" height="24"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mood_5" translatesAutoresizingMaskIntoConstraints="NO" id="hQG-FP-TXa">
+                            <rect key="frame" x="243" y="0.0" width="61" height="24"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="7Kj-W9-cro"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QAR-CA-0hY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6hF-4e-fOm"/>
+                <constraint firstItem="BTh-n4-tKV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="MWJ-mm-x8r"/>
+                <constraint firstAttribute="trailing" secondItem="2eN-AQ-13I" secondAttribute="trailing" constant="8" id="Rfe-wn-vnm"/>
+                <constraint firstItem="2eN-AQ-13I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="U01-ho-kAn"/>
+                <constraint firstAttribute="trailing" secondItem="QAR-CA-0hY" secondAttribute="trailing" id="VD4-CO-V0X"/>
+                <constraint firstItem="2eN-AQ-13I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ekW-Pg-uJ4"/>
+                <constraint firstAttribute="trailing" secondItem="BTh-n4-tKV" secondAttribute="trailing" constant="8" id="kMK-gi-wTW"/>
+                <constraint firstAttribute="bottom" secondItem="BTh-n4-tKV" secondAttribute="bottom" constant="8" id="lG0-uX-are"/>
+                <constraint firstItem="QAR-CA-0hY" firstAttribute="top" secondItem="2eN-AQ-13I" secondAttribute="bottom" constant="8" id="pPz-Ur-j7x"/>
+                <constraint firstItem="BTh-n4-tKV" firstAttribute="top" secondItem="QAR-CA-0hY" secondAttribute="bottom" id="sMC-8M-EKt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mood_1" width="132" height="132"/>
+        <image name="mood_2" width="132" height="132"/>
+        <image name="mood_3" width="132" height="132"/>
+        <image name="mood_4" width="132" height="132"/>
+        <image name="mood_5" width="132" height="132"/>
+    </resources>
+</document>
