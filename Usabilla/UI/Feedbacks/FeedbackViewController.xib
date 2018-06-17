@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackViewController" customModule="Usabilla_Test_Task" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackViewController" customModule="Usabilla" customModuleProvider="target">
             <connections>
                 <outlet property="browser" destination="n6N-12-jEV" id="fmS-JM-fny"/>
                 <outlet property="comment" destination="JNn-1w-Czs" id="bQ0-pQ-lx0"/>
@@ -274,7 +274,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="7gS-fI-mqH" firstAttribute="top" secondItem="1WV-AU-Xom" secondAttribute="bottom" constant="16" id="4bE-t6-7EI"/>
                                 <constraint firstItem="SVQ-pq-Yf0" firstAttribute="leading" secondItem="TJs-Hg-0Rl" secondAttribute="leading" id="7QC-JK-5Ug"/>
