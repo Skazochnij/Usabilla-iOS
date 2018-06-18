@@ -12,11 +12,11 @@ import Charts
 class FeedbackPieChart: UIView, NibLoadable, ChartViewProtocol {
     private static let centerTextAttributes: [NSAttributedStringKey : Any] = [
         NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-Bold", size: 20)!,
-        NSAttributedStringKey.foregroundColor: UIColor(rgb: 0x555D65)
+        NSAttributedStringKey.foregroundColor: UIColor.darkGray
     ]
     private static let colors = [
-        UIColor(rgb: 0xDCA851),
-        UIColor(rgb: 0x49A3C7)
+        UIColor.diserria,
+        UIColor.pelorous
     ]
     
     var viewModel: ChartViewModelProtocol? {

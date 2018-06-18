@@ -66,7 +66,7 @@ class RatingBarChart: UIView, NibLoadable, ChartViewProtocol {
             }
             
             let set: BarChartDataSet! = BarChartDataSet(values: yVals, label: "The year 2017")
-            set.colors = [UIColor(rgb: 0x459BBE)]
+            set.colors = [UIColor.pelorous]
             
             let data = BarChartData(dataSet: set)
             data.setValueFormatter(CustomIntFormatter())

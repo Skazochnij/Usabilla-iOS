@@ -9,9 +9,11 @@
 import UIKit
 
 extension UIColor {
-    open static let pelorous: UIColor = UIColor(rgb: 0x49A3C5)
     open static let green: UIColor = UIColor(rgb: 0x5BC584)
     open static let orange: UIColor = UIColor(rgb: 0xDB682E)
+    open static let diserria: UIColor = UIColor(rgb: 0xDCA851)
+    open static let pelorous: UIColor = UIColor(rgb: 0x49A3C5)
+    open static let shuttlegray: UIColor = UIColor(rgb: 0x555D65)
     
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")
