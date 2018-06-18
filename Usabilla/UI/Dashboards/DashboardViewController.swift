@@ -44,7 +44,7 @@ extension DashboardViewController: DataUpdateable {
     }
 }
 
-extension DashboardViewController: UICollectionViewDataSource {
+extension DashboardViewController: UICollectionViewDataSource { //TODO Refactor, don't have enough time
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return charts.reduce(0) {$0 + $1.count}
     }
